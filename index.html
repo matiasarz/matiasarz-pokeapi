@@ -4,19 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buscador pokemones</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/083810b2a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
-    <div class="contenedor">
-        <input type="text" id="numero" placeholder="Buscar por cantidad">
-        <input type="text" id="letra" placeholder="Buscar por nombre">
-    </div>
-    <div class="contenedor">
-        <div class="cnumero"></div>
-        <div class="cletra"></div>
-    </div>
+    <header class="headerContainer">
+        <nav class="navBar" id="navBar">
+            <ul>
+                <li><a href="#" id="quantity">Buscar por cantidad</a></li>
+                <li><a href="#" id="name">Buscar por nombre</a></li>
+                <li><a href="#" id="type">Buscar por tipo</a></li>
+                <li><a href="#" id="all">Todos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainContainer">
+        <form class="formContainer" id="form" autocomplete="off">
+            <div class="inputContainer">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" id="inputSearch" placeholder="Buscar por cantidad">
+            </div>
+        </form>
+        <section id="cardContainer">
+        </section>
+    </main>
+
+    <template id="cardPokemon">
+        <article class="card">
+            <h1></h1>
+            <img src="" alt="">
+            <p><b>Type</b></p>
+            <h4></h4>
+        </article>
+    </template>
     
 
     <script src="app.js"></script>

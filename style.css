@@ -1,18 +1,67 @@
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
 }
-.contenedor {
-    margin: 50px 20px;
+.headerContainer .navBar ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222d22;
+    padding: 10px;
+}
+/* .headerContainer .navBar ul li {
+} */
+.headerContainer .navBar ul li a {
+    padding: 10px;
+    color: #fff;
+    font-size: .9em;
+}
+
+.mainContainer {
+    width: 90%;
+    margin: 50px auto;
+}
+.formContainer {
     display: flex;
     justify-content: space-around;
 }
-.contenedor input {
+.formContainer .inputContainer button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.formContainer .inputContainer button i {
+    font-size: 1.5em;
+}
+
+.formContainer .inputContainer input {
     padding: 10px;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 600;
     outline-color: #38f;
-    /* border: none; */
+}
+.mainContainer #cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainContainer #cardContainer .card {
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid #000;
+    width: fit-content;
+    text-align: center;
+    box-shadow: 0px 10px 10px #999;
+    max-width: 280px;
+}
+.mainContainer #cardContainer .card img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+}
+.mainContainer #cardContainer .card h4 {
+    margin-top: 10px;
 }
