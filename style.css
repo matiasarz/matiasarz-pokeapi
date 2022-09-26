@@ -43,6 +43,25 @@
     font-weight: 600;
     outline-color: #38f;
 }
+.mainContainer .typesPokemons {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.mainContainer .typesPokemons div {
+    max-width: 100px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #4bff33;
+    color: #fff;
+}
+.mainContainer .typesPokemons div label {
+    /* padding: 10px; */
+    width: inherit;
+    /* padding: 10px 30px; */
+}
 .mainContainer #cardContainer {
     display: flex;
     flex-wrap: wrap;
