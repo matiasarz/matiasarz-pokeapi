@@ -83,7 +83,7 @@ form.addEventListener('submit', (e) => {
             item.forEach((item) => searchBy({ item, e }))
         );
     } else if (inputSearch.placeholder === 'Buscar por nombre') {
-        getAllPokemons(10).then((item) =>
+        getAllPokemons(120).then((item) =>
             item.forEach((item) => searchBy({ item, e }))
         );
     }
@@ -130,7 +130,7 @@ navBar.querySelectorAll('ul li').forEach((item) =>
 
 filters.querySelectorAll('div').forEach((item) =>
     item.addEventListener('click', (e) => {
-        getAllPokemons(10).then((item) =>
+        getAllPokemons(120).then((item) =>
             item.forEach((item) => searchBy({ item, e }))
         );
     })
